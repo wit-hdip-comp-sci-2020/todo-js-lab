@@ -15,7 +15,7 @@ function renderTodo(todo) {
   const dateCell = row.insertCell(1);
   dateCell.innerText = todo.date;
   const deleteCell = row.insertCell(2);
-  deleteCell.innerText = `<a class="uk-button uk-button-default" onclick="deleteTodo('${todo.id}')">delete</a>`;
+  deleteCell.innerHTML = `<a class="uk-button uk-button-default">delete</a>`;
 }
 
 function addTodo() {
